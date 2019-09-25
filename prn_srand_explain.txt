@@ -1,20 +1,19 @@
-#include <stdio.h> = printf함수가 포함되어있는 stdio.h를 가져옵니다.
-#include <stdlib.h> = srand와 rand 함수가 포함되어있는 sodlib.h를 가져옵니다.
-#include <time.h> = time함수가 포함되어있는 time.h를 소스에 가져옵니다.
-
-int main(void){ = main함수에 아무것도 넣지 않고 정수형 자료결과를 내보내는 함수라는 뜻 입니다.
-        int i, n ,seed;
-        seed = time(NULL);
-        srand(seed);
-        printf("\n%s\n%s", = 문자열기준으로 두번 엔터
-                "Some randomly distributed intergers will be printed.", = 프린트하기
-                "How may do you want to see?"); = 프린트하기
-        scanf("%d", &n);
-        for (i = 0; i < n; ++i){
-                if(i%10 == 0)
-                        putchar('\n');
-                printf("%12d", rand());
-        }
-        printf("\n\n"); = 두번 엔터
-        return 0;
-}
+1. printf함수가 포함되어있는 stdio.h를 가져옵니다.
+2. srand와 rand 함수가 포함되어있는 sodlib.h를 가져옵니다.
+3. time함수가 포함되어있는 time.h를 소스에 가져옵니다.
+4. main함수에 아무것도 넣지 않고 정수형 자료결과를 내보내는 함수라는 뜻 입니다
+5. i,n,seed를 정수형 변수선언합니다.
+6. seed는 1970년 1월 1일 이후 경과된 시간을 초 단위로 반환하는 함수입니다.
+7. 1초 단위로 매번 다른 시드값을 생성합니다..
+8. 문자열기준으로 두번 엔터
+9. 프린트합니다.
+10. 프린트합니다.
+11. 변수n에 숫자를 입력을 받습니다.
+12. for문을 n번 반복합니다.
+13. i가 10으로 나누어 떨어지면(조건)
+14. 한 줄 띄웁니다.
+15. 랜덤으로 정수형을 프린트합니다.
+16. 
+17. 두 줄 엔터
+18. 반환값으로 0을 반환합니다.
+19.
