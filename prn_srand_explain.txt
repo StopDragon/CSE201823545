@@ -1,0 +1,20 @@
+#include <stdio.h> = printf함수가 포함되어있는 stdio.h를 가져옵니다.
+#include <stdlib.h> = srand와 rand 함수가 포함되어있는 sodlib.h를 가져옵니다.
+#include <time.h> = time함수가 포함되어있는 time.h를 소스에 가져옵니다.
+
+int main(void){ = main함수에 아무것도 넣지 않고 정수형 자료결과를 내보내는 함수라는 뜻 입니다.
+        int i, n ,seed;
+        seed = time(NULL);
+        srand(seed);
+        printf("\n%s\n%s", = 문자열기준으로 두번 엔터
+                "Some randomly distributed intergers will be printed.", = 프린트하기
+                "How may do you want to see?"); = 프린트하기
+        scanf("%d", &n);
+        for (i = 0; i < n; ++i){
+                if(i%10 == 0)
+                        putchar('\n');
+                printf("%12d", rand());
+        }
+        printf("\n\n"); = 두번 엔터
+        return 0;
+}
