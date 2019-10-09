@@ -1,0 +1,9 @@
+min(x, y, z)
+(((x<y)?x:y)<z)?((x<y)?x:y):z
+조건1 ? (조건2 ? exp1 : exp2) : exp3
+(x<y)?((((x<y)?x:y)<z)?x:y):z
+
+max(x, y, z, w)
+(((((x>y)?x:y)>z)?((x>y)?x:y):z)>w)?((((x>y)?x:y)>z)?((x>y)?x:y):z):w
+test1 ? (test2 ? exp1 : exp2) : (test3 ? exp3 : exp4)
+https://dojang.io/mod/forum/discuss.php?d=97
