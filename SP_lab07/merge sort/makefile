@@ -1,4 +1,4 @@
-margesort: merge.o mergesorta.o wrt.o main.o
+margesort: p_r_s.h merge.o mergesorta.o wrt.o main.o
 	gcc -o mergesort merge.o mergesorta.o wrt.o main.o
 merge.o: merge.c
 	gcc -c merge.c
